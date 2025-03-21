@@ -34,7 +34,7 @@ nav {
 }
 
 .logo {
-    width: 100px;
+    width: 90px;
 }
 
 nav ul li {
@@ -430,6 +430,10 @@ nav .fa-solid {
 
     .contact-left, .contact-right {
         flex-basis: 100%;
+    }
+
+    .contact-left p {
+        font-size: 15px;
     }
 
     .copyright {
