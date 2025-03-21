@@ -42,11 +42,11 @@ To get started with this project, follow these steps:
 This will start the development server and open the application in your default web browser.
 
 ## Project Structure
-- **index.html/**: Main HTML file containing the structure of the website.
-- **style.css/**: Contains all styles for the project.
-- **script.js/**: JavaScript for interactive elements and smooth scrolling.
-- **images//**: Folder containing images used in the project.
-- **fontawesome//**: For adding custom icons using FontAwesome.
+- **index.html**: Main HTML file containing the structure of the website.
+- **style.css**: Contains all styles for the project.
+- **script.js**: JavaScript for interactive elements and smooth scrolling.
+- **images/**: Folder containing images used in the project.
+- **fontawesome/**: For adding custom icons using FontAwesome.
   
 ## Usage
 - **Home Section:** Introduction and personal greeting.
