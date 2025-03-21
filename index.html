@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0548c7f4e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Mahima</span> Choudhary</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hey there! I'm Mahima Choudhary, and I just graduated with a Bachelor's degree in Computer Science and Engineering
+                        from GB Pant Institute of Engineering & Technology in Pauri Garhwal. My passion for technology really shines through
+                        in my love for Front-End Development and Software Development. I have a knack for design and enjoy crafting engaging user
+                        experiences. I've been diving deep into front-end development, sharpening my skills in HTML, CSS, JavaScript, React.js,
+                        Python, Figma and even Generative AI!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Developer</span><br>Designs & Builds Computer Programs</li>
+                            <li><span>Generative AI</span><br>Analyze User Behaviour, Preferences & Interaction Patterns</li>
+                            <li><span>Front-End Developer</span><br>Designing & Building the User Interface (UI) & Enhancing the User Experience (UX) of Websites and Web Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Software Development Engineer Intern -  Bluestock Fintech</li>
+                            <li><span>2023</span><br>Fundraiser Volunteering from Odisha Development Management Programme(ODMP) Organization</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>B.Tech(CSE) from Govind Ballabh Pant Institute of Engineering & Technology, Pauri Garhwal, Uttarakhand</li>
+                            <li><span>2020</span><br>Intermediate (HSC) from A.S.A.S.V.M School, Roorkee , Uttarakhand</li>
+                            <li><span>2018</span><br>High School (SSC) from A.S.A.S.V.M School, Roorkee , Uttarakhand</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------Services------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p>Designing, coding, testing, maintaining software applications and writing clean, efficient, and maintainable code using programming languages like Python, JavaScript, or C++.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Generative AI Prompt Engineering</h2>
+                <p>Designing and optimizing prompts to ensure that AI models generate accurate, useful, and contextually appropriate responses.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Front-End Engineer</h2>
+                <p>Building the user interface (UI) and user experience (UX) of a website or application and ensure websites work across different browsers and devices.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------Projects------------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src="images/restaurant.png" alt="">
+                <div class="layer">
+                    <h3>Little-Lemon-Restaurant-App</h3>
+                    <p>Little Lemon is a restaurant website built using React. This website is designed to showcase the bookings for a table for
+                        various occasions, restaurant's menu, services, and contact information.</p>
+                    <a href="https://little-lemon-restaurant-app-five.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/todolist.png" alt="">
+                <div class="layer">
+                    <h3>To-Do List</h3>
+                    <p>A simple and interactive To-Do List application built using HTML, CSS, and JavaScript. This project helps users to manage
+                        their daily tasks by allowing them to add, delete, and mark tasks as completed.</p>
+                    <a href="https://to-do-list-tau-rose-98.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/tictactoe.png" alt="">
+                <div class="layer">
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p>A simple Tic-Tac-Toe game built using React. This project demonstrates basic concepts of React such as component-based architecture, state management, and event handling.</p>
+                    <a href="https://tic-tac-toe-eosin-kappa-50.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="projects-list">
+            <div class="project">
+                <img src="images/customform.png" alt="">
+                <div class="layer">
+                    <h3>CustomForm Component</h3>
+                    <p>A reusable custom submit form in React that allows adding dynamic input fields and buttons by sending them as props.</p>
+                    <a href="https://custom-form-three.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/randomuser.png" alt="">
+                <div class="layer">
+                    <h3>Random User Fetcher</h3>
+                    <p>This project is a simple application that fetches random user data from the Random User API and displays it. The application is built using JavaScript and HTML.</p>
+                    <a href="https://my-randomuser-app.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/application.png" alt="">
+                <div class="layer">
+                    <h3>Realtime Earthquake Predictor application</h3>
+                    <p>A realtime earthquake predictor web app with google maps API, that forecasts earthquake possible epicenters and places in window of next 7 days.
+                    </p>
+                    <a href="https://github.com/MahimaChoudhary7/earthquake_prediction"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!----------Contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mahimachoudhary7302@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +917088264632</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mahima.chaudhary.357622"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/i_mahima.choudhary/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mahima70/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MahimaChoudhary7"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Mahima Choudhary_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Mahima</p>
+    </div>
+</div>
+
+ <script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+ <script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right= "0";
+    }
+    function closemenu() {
+        sidemenu.style.right= "-200";
+    }
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDrLbFGd_-3K50Z3yjRSGnWg0XFm3t8_JKuNSkbisyOyM7z6kS8PLNjBlCKqjViZgqWw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
