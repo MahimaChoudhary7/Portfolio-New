@@ -10,14 +10,13 @@ html {
 }
 
 body {
-    background: #080808;
+    background: #121212;
     color: #fff;
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background: url(images/background.png);
     background-size: cover;
     background-position: center;
 }
@@ -35,6 +34,8 @@ nav {
 
 .logo {
     width: 90px;
+    margin-left: -140px;
+    cursor: pointer;
 }
 
 nav ul li {
@@ -66,12 +67,12 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;
-    font-size: 30px;
+    margin-top: 10%;
+    margin-left: -140px;
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 100px;
     margin-top: 20px;
 }
 
@@ -79,6 +80,9 @@ nav ul li a:hover::after {
     color: #ff004f;
 }
 
+.header-text p {
+    font-size: 100px;
+}
 /*----------about---------*/
 
 #about {
